@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:padding="15dp"
+    android:background="#F6F7F7"
+    android:focusable="true"  
+    android:focusableInTouchMode="true">
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="#FCEDED"
+    	>
+	    <TextView android:id="@+id/edit_title" 
+        android:layout_width="fill_parent"
+        android:layout_height="65dp" 
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true" 
+         android:background="#00000000"
+        android:textSize="25sp" 
+        android:textColor="#575757"
+        android:gravity="center" />
+    <TextView android:id="@+id/edit_divider" 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp" 
+        android:layout_below="@id/edit_title" 
+         android:background="#88333333"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginBottom="10dp"/>
+ 	<EditText
+        android:id="@+id/edit_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:padding="15dp"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="10"
+        android:scrollbars="none" 
+        android:textColor="#575757"
+        android:layout_below="@id/edit_divider"
+        android:layout_above="@+id/edit_menu"/>
+ 	
+    <RelativeLayout 
+        android:id="@id/edit_menu"
+        android:layout_width="fill_parent" 
+        android:layout_height="40dp"
+        android:paddingTop="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000">
+ 		<Button android:id="@+id/edit_done" 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+         android:background="#00000000"
+         android:text="done"
+         android:textColor="#66666666"
+        android:textSize="20sp" 
+        android:gravity="center" 
+        android:visibility="gone"/>
+ 		<Button android:id="@+id/edit_time" 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+         android:background="#00000000"
+         android:text="time"
+         android:textColor="#66666666"
+        android:textSize="20sp" 
+        android:gravity="center" 
+        android:visibility="gone"/>
+ 		<Button android:id="@+id/edit_back" 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" 
+        android:layout_centerHorizontal="true" 
+         android:background="#00000000"
+         android:text="back"
+        android:textSize="20sp" 
+        android:textColor="#66666666"
+        android:gravity="center" />
+    </RelativeLayout>
+	</RelativeLayout>
+    
+
+</RelativeLayout>

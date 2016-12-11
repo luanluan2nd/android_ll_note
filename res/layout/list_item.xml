@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:minHeight="80dp"
+    android:background="#F9E8E8"
+    >
+    
+    <TextView
+        android:id="@+id/item_day_of_month"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_gravity="top"
+        android:paddingTop="5dp"
+        android:gravity="center_horizontal|top"
+        android:textSize="25sp" 
+        android:textColor="#FFF"
+		android:background="#99b1b1b1"
+		android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/item_day_of_week"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_gravity="top"
+        android:gravity="center_horizontal|top"
+        android:textSize="14sp" 
+        android:layout_below="@id/item_day_of_month"
+        android:background="#99b1b1b1"
+        android:visibility="gone"/>
+    	
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/item_day_of_month"
+        android:layout_alignParentRight="true"
+        android:maxLines="2"
+		android:ellipsize="end"
+        android:textSize="20sp" 
+		android:background="#00000000"/>
+   
+</RelativeLayout>
+
+
